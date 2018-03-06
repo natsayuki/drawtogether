@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.use(express.static("static"));
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 6666;
 
 io.on('connection', (socket)=>{
   beamit(socket, 'connection', 'true');
